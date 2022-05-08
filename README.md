@@ -1,11 +1,11 @@
 # epay-chargily-python
-Chargily ePay Gateway (Python Package)
+Chargily ePay Gateway (Python Library)
 
 ![Chargily ePay Gateway](https://raw.githubusercontent.com/Chargily/epay-gateway-php/main/assets/banner-1544x500.png "Chargily ePay Gateway")
 
 This Plugin is to integrate ePayment gateway with Chargily easily.
 - Currently support payment by **CIB / EDAHABIA** cards and soon by **Visa / Mastercard** 
-- This repo is recently created for **Python package**, If you are a developer and want to collaborate to the development of this package, you are welcomed!
+- This repo is recently created for **Python Library**, If you are a developer and want to collaborate to the development of this library, you are welcomed!
 
 # Contribution tips
 1. Make a fork of this repo.
