@@ -1,0 +1,19 @@
+site_name: My Docs
+theme: 
+    name: readthedocs
+
+site_name: Chargily-python
+site_url: https://chargily.com/
+
+nav:
+    - Introduction:
+        - Overview: index.md
+        - Installation: installation.md
+        - Quickstart: quick_start.md
+    - Core:
+        - Invoice: invoice.md
+        - Webhook: webhook.md
+        - Constants: constants.md
+        - Utils: utils.md
+    # - Webhook: index.md
+    # - Example: index.md
