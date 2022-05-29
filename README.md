@@ -51,7 +51,7 @@ if response.status_code == 201:
 
 # Contribution tips
 1. Make a fork of this repo.
-2. Take a tour to our [API documentation here](https://dev.chargily.com/docs/#/epay-api)
+2. Take a tour to our [API documentation here](http://dev.codingdz.com/python-chargily-epay/)
 3. Get your API Key/Secret from [ePay by Chargily](https://epay.chargily.com) dashboard for free.
 4. Start developing.
 5. Finished? Push and merge.
