@@ -1,0 +1,9 @@
+my_env/
+**/__pycache__/
+**/.pytest_cache/
+**/chargily_epay.egg-info/
+**/chargily_epay_async.egg-info/
+dist/
+build/
+site/
+main.py
