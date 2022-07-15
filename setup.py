@@ -8,43 +8,42 @@ import pathlib
 here = pathlib.Path(__file__).parent.resolve()
 
 # Get the long description from the README file
-long_description =  (here / "README.md").read_text(encoding="utf-8")
+long_description = (here / "README.md").read_text(encoding="utf-8")
 
 
 sync_data = {
-    'name':"chargily-epay",
-    'exclude':['chargily_lib.async_lib'],
-    'install_requires':["requests==2.27"],
+    "name": "chargily-epay-python",
+    "exclude": ["chargily_lib.async_lib"],
+    "install_requires": ["requests==2.27"],
 }
 
 async_data = {
-    'name':"chargily-epay-async",
-    'exclude':['chargily_lib.sync_lib'],
-    'install_requires':["aiohttp==3.8"],
+    "name": "chargily-epay-Async",
+    "exclude": ["chargily_lib.sync_lib"],
+    "install_requires": ["aiohttp==3.8"],
 }
 
 build_arg = None
 
-build_type = os.getenv('BUILD_TYPE','sync')
+build_type = os.getenv("BUILD_TYPE", "sync")
 
-if build_type == 'sync':
+if build_type == "sync":
     build_arg = sync_data
-elif build_type == 'async':
+elif build_type == "async":
     build_arg = async_data
-else :
-    raise ValueError('build_type should be sync or async')
-
+else:
+    raise ValueError("build_type should be sync or async")
 
 
 setup(
-    name=build_arg['name'],  # Required
+    name=build_arg["name"],  # Required
     version="0.0.2",  # Required
     description="Chargily ePay Gateway (Python Library)",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
     url="https://github.com/Chargily/chargily-epay-python",  # Optional
-    author="Tarek berkane",  # Optional
-    author_email="tarekg320@example.com",  # Optional
+    author="Chargily",  # Optional
+    author_email="developers@chargily.com",  # Optional
     classifiers=[  # Optional
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -59,13 +58,13 @@ setup(
     ],
     keywords="e-pay, chargily, edahabia, cib",  # Optional
     package_dir={"": "src"},  # Optional
-    packages=find_packages(where="src",exclude=build_arg['exclude']),  # Required
+    packages=find_packages(where="src", exclude=build_arg["exclude"]),  # Required
     python_requires=">=3.7",
-    install_requires=build_arg['install_requires'],  # Optional
+    install_requires=build_arg["install_requires"],  # Optional
     project_urls={  # Optional
         "Bug Reports": "https://github.com/Chargily/chargily-epay-python/issues",
-        "Funding": "https://donate.pypi.org",
         "Say Thanks!": "https://github.com/Chargily",
         "Source": "https://github.com/Chargily/chargily-epay-python/",
+        "Website": "https://chargily.com/",
     },
 )
