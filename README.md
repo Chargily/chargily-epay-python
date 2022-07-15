@@ -11,14 +11,14 @@ This Plugin is to integrate ePayment gateway with Chargily easily.
 ## chargily-epay
 this is `sync` version using `requests` library 
 ```
-pip install chargily-epay
+pip install chargily-epay-python
 ```
 
 
 ## chargily-epay-async
 this is `async` version using `aiohttp` library
 ```
-pip install chargily-epay-async
+pip install chargily-epay-Async
 ```
 
 ## Quickstart 
