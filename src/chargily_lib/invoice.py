@@ -110,9 +110,9 @@ class Invoice(UserDict):
         if not isinstance(discount, (float, int)):
             raise BadConfigException("Discount should be type of int, float")
 
-        if 0 > discount or discount >= 1:
+        if 0 > discount or discount >= 100:
             raise BadConfigException(
-                "Discount should be bigger or equal 0 or smaller than 1"
+                "Discount should be bigger or equal 0 or smaller than 100"
             )
 
     # BACK_URL
